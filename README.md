@@ -1,124 +1,139 @@
-# Análise Quantitativa e Previsão do Mercado Financeiro com Machine Learning
+# Quantitative Analysis and Financial Market Forecasting with Machine Learning
 
-## Visão Geral
+## Overview
 
-Este projeto aplica técnicas de Ciência de Dados, Finanças Quantitativas e Machine Learning para análise de ativos financeiros, gerenciamento de risco e previsão de movimentos do mercado.
+This project applies Data Science, Quantitative Finance, and Machine Learning techniques for financial asset analysis, risk management, and market movement forecasting.
 
-O estudo utiliza dados históricos do mercado brasileiro e internacional para avaliar:
-- risco
-- retorno
-- volatilidade
-- diversificação
-- previsão de ativos
-- performance de portfólio
+The study uses historical data from both Brazilian and international financial markets to evaluate:
 
-Além disso, o período da pandemia foi removido da análise devido à quebra estrutural causada pela extrema volatilidade do mercado.
+* risk
+* return
+* volatility
+* diversification
+* asset forecasting
+* portfolio performance
 
----
-
-# Objetivo
-
-O objetivo principal do projeto é investigar como variáveis macroeconômicas e financeiras podem auxiliar na previsão do comportamento do mercado financeiro e na construção de estratégias quantitativas.
-
-O projeto também busca:
-- avaliar risco e retorno
-- analisar diversificação
-- aplicar métricas quantitativas
-- testar modelos de Machine Learning
-- realizar backtesting de estratégias
+Additionally, the pandemic period was removed from the analysis due to the structural break caused by extreme market volatility.
 
 ---
 
-# Ativos Utilizados
+# Objective
 
-| Ativo | Ticker |
-|---|---|
-| IBOVESPA | ^BVSP |
-| S&P500 | ^GSPC |
-| VIX | ^VIX |
-| Dólar | USDBRL=X |
-| Ouro | GC=F |
-| IPCA | Banco Central do Brasil |
+The main objective of this project is to investigate how macroeconomic and financial variables can support financial market forecasting and the development of quantitative investment strategies.
 
----
+The project also aims to:
 
-# Tecnologias Utilizadas
-
-- Python
-- Pandas
-- NumPy
-- Matplotlib
-- Seaborn
-- Scikit-Learn
-- yfinance
-- Jupyter Notebook
+* evaluate risk and return
+* analyze diversification
+* apply quantitative risk metrics
+* test Machine Learning models
+* perform strategy backtesting
 
 ---
 
-# Metodologia
+# Assets Used
 
-## 1. Coleta de Dados
-
-Os dados históricos foram coletados utilizando:
-- Yahoo Finance API
-- API do Banco Central do Brasil
-
-O período analisado compreende dados entre 2014 e 2025.
-
----
-
-## 2. Tratamento dos Dados
-
-Foram realizados:
-- limpeza de dados
-- tratamento de valores nulos
-- alinhamento temporal
-- padronização das séries históricas
-
-## 3. Remoção da Pandemia
-
-O período da pandemia foi removido do treinamento do modelo devido à quebra estrutural causada pela COVID-19 nos mercados financeiros.
-
-Essa abordagem reduz distorções estatísticas e melhora a estabilidade da modelagem.
-
-## 4. Engenharia de Features
-
-Foram criadas variáveis derivadas como:
-- retornos logarítmicos
-- volatilidade móvel
-- médias móveis
-- momentum
-- correlação dinâmica
-
-## 5. Modelagem
-
-Foi utilizado o modelo Random Forest para identificação de padrões históricos e previsão do comportamento do mercado.
-
-# Métricas Financeiras
-
-O projeto utiliza métricas quantitativas como:
-
-- Value at Risk (VaR)
-- Conditional Value at Risk (CVaR)
-- Volatilidade
-- Correlação
-- Drawdown
-- Sharpe Ratio
-- Retorno acumulado
-
-# Resultados
-
-Os resultados demonstraram que:
-
-- portfólios diversificados reduziram o risco total
-- o VIX apresentou maior volatilidade
-- o S&P500 apresentou crescimento mais consistente
-- o ouro funcionou como ativo de proteção
-- o modelo conseguiu identificar padrões relevantes entre variáveis macroeconômicas e movimentos do mercado
+| Asset                | Ticker                 |
+| -------------------- | ---------------------- |
+| IBOVESPA             | ^BVSP                  |
+| S&P500               | ^GSPC                  |
+| VIX                  | ^VIX                   |
+| US Dollar            | USDBRL=X               |
+| Gold                 | GC=F                   |
+| IPCA Inflation Index | Central Bank of Brazil |
 
 ---
 
-# Estrutura do Projeto
+# Technologies Used
+
+* Python
+* Pandas
+* NumPy
+* Matplotlib
+* Seaborn
+* Scikit-Learn
+* yfinance
+* Jupyter Notebook
+
+---
+
+# Methodology
+
+## 1. Data Collection
+
+Historical financial data was collected using:
+
+* Yahoo Finance API
+* Central Bank of Brazil API
+
+The analyzed period ranges from 2014 to 2025.
+
+---
+
+## 2. Data Preprocessing
+
+The following procedures were performed:
+
+* data cleaning
+* missing value treatment
+* temporal alignment
+* time series standardization
+
+---
+
+## 3. Pandemic Removal
+
+The pandemic period was removed from the model training process due to the structural break caused by COVID-19 in financial markets.
+
+This approach reduces statistical distortions and improves model stability.
+
+---
+
+## 4. Feature Engineering
+
+Derived variables were created, including:
+
+* logarithmic returns
+* rolling volatility
+* moving averages
+* momentum indicators
+* dynamic correlation metrics
+
+---
+
+## 5. Modeling
+
+The Random Forest model was used to identify historical patterns and forecast market behavior.
+
+---
+
+# Financial Metrics
+
+The project applies quantitative financial metrics such as:
+
+* Value at Risk (VaR)
+* Conditional Value at Risk (CVaR)
+* Volatility
+* Correlation
+* Drawdown
+* Sharpe Ratio
+* Cumulative Return
+
+---
+
+# Results
+
+The results demonstrated that:
+
+* diversified portfolios reduced total risk
+* the VIX presented the highest volatility
+* the S&P500 showed more consistent growth
+* gold acted as a hedge asset
+* the model identified relevant patterns between macroeconomic variables and market movements
+
+---
+
+# Project Structure
 
 portfolio-analysis/
 │
@@ -133,7 +148,7 @@ portfolio-analysis/
 
 ---
 
-# Como Executar
+# How to Run
 
 ```bash
 git clone https://github.com/JPmascena/Portfolio-Analysis.git
@@ -143,3 +158,4 @@ cd Portfolio-Analysis
 pip install -r requirements.txt
 
 jupyter notebook
+```
